@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Ahorcado</title>
     <script>
-        Contenedor[Palabras];
-        Palabras[arbol, manzana, lapiz, queso];
-        
-         
-        switch(Contenedor){
-         case arbol:
-            
 
-         break;
-        
+        const palabras = ['arbol', 'manzana', 'lapiz', 'queso'];
 
-        }   
+        let SelecionarPalabra;
+
+
+      
+        const palabraRandom = () => {
+            let palabra = palabras[Math.floor((Math.random() * palabras.length))].toUpperCase();
+            SelecionarPalabra = palabra.split('');
+        };
+
 
 
 
     </script>
 </head>
+
 <body style="background-color: cornflowerblue;">
     <img src="" alt="">
-    <div class="Monito">
+    <div name="Monito">
 
 
     </div>
-    <center><input type="text" class="Intetios"></center>
+    <br>
+    <br>
+    <div name="letrasUsadas"> </div>
+    <br>
+    <br>
+    <div id="PalabraContenedor"></div>
+    <input type="text">
+
 </body>
+
 </html>
